@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project ignores
+data/
+checkpoints/webtext/human/lstm/lstm.model.torch
+checkpoints/webtext/human/ngram/ngram.model.arpa
+checkpoints/webtext/human/ngram/ngram.model.binary
+checkpoints/webtext/human/vocab.model.pickle
+checkpoints/webtext/*/*/*/lstm.model.torch
+checkpoints/webtext/*/*/*/ngram.model.arpa
+checkpoints/webtext/*/*/*/ngram.model.binary
+checkpoints/webtext/*/*/*/langmodel.human.surps.pickle
+checkpoints/webtext/*/*/*/langmodel.model.surps.pickle
