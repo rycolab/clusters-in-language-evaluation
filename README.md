@@ -2,7 +2,7 @@
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/rycolab/clusters-in-language-evaluation/tree/main.svg?style=svg&circle-token=555ae1e5333644c90e3364a2959808171ff39d0d)](https://dl.circleci.com/status-badge/redirect/gh/rycolab/clusters-in-language-evaluation/tree/main)
 
-Code accompanying the ICLR 2023 publication "On the Usefulness of Embeddings, Clusters and Strings for Text Generator Evaluation".
+Code accompanying the ICLR 2023 publication [On the Usefulness of Embeddings, Clusters and Strings for Text Generator Evaluation](https://openreview.net/forum?id=bvpkw7UIRdU).
 
 ## Install Dependencies
 
