@@ -1,3 +1,6 @@
 [submodule "kenlm"]
 	path = kenlm
 	url = git@github.com:kpu/kenlm.git
+[submodule "mauve"]
+	path = mauve
+	url = git@github.com:tpimentelms/mauve.git
