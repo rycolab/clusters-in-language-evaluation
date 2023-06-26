@@ -34,9 +34,15 @@ jobs:
               conda activate clusters-in-lang-eval
               conda install -y pytorch torchvision cpuonly -c pytorch
               pip install transformers
-              pip install https://github.com/kpu/kenlm/archive/master.zip
               git submodule update --init --recursive
               pip install ./mauve
+              # install kenlm
+              cd kenlm
+              mkdir -p build
+              cd build
+              cmake ..
+              make -j 4
+              pip install https://github.com/kpu/kenlm/archive/master.zip
             else
               echo "Conda env already installed"
             fi;
