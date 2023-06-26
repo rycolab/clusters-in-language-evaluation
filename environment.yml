@@ -1,0 +1,19 @@
+name: clusters-in-lang-eval
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - nltk
+  - tqdm
+  - matplotlib
+  - jupyterlab
+  - pylint
+  - pip
+  - pip:
+    - seaborn
+    - ipdb
