@@ -103,7 +103,7 @@ $ make plot
 #### Citation
 
 Here is the bibtex citation for our paper:
-```json
+```
 @inproceedings{pimentel2023on,
 	title={On the Usefulness of Embeddings, Clusters and Strings for Text Generation Evaluation},
 	author={Tiago Pimentel and Clara Isabel Meister and Ryan Cotterell},
