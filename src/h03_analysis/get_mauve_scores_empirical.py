@@ -4,10 +4,8 @@ import argparse
 import numpy as np
 from scipy import stats
 from sklearn.metrics import auc
-from mauve.compute_mauve import get_divergence_curve_for_multinomials
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
-from h02_learn.eval import load_checkpoints
 from util import util
 
 
