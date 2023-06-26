@@ -91,12 +91,4 @@ class LstmLM(BaseLM):
             logits[ended, pad] += 100000000
             logits[~ended, pad] -= float('inf')
 
-        # probs = F.softmax(logits, dim=-1)
-        # logits[
-        #     (probs < .01) & \
-        #     (probs != probs.max(-1, keepdim=True)[0])
-        # ] = -float('inf')
-        # # top_logits, _ = logits.topk(k=10, dim=-1)
-        # # topk_mask = (logits < top_logits[:, -1:].repeat(1, logits.shape[-1]))
-        # # logits[topk_mask] = -float('inf')
         return logits
