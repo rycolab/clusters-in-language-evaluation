@@ -11,9 +11,9 @@ dependencies:
   - nltk
   - tqdm
   - matplotlib
+  - seaborn
   - jupyterlab
   - pylint
   - pip
   - pip:
-    - seaborn
     - ipdb
