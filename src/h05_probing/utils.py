@@ -26,7 +26,7 @@ def load_gpt2_dataset(json_file_name, num_examples=float('inf')):
         texts.append(json.loads(line)['text'])
     return texts
 
-def get_representations(texts, model, mean, recompute=False, save=True, save_dir="reps"):
+def get_representations(texts, model, mean, recompute=False, save=True, save_dir="reps", max_len=512):
     def get_repfile_name(t, model, mean):
         mean_flag = '_m' if mean else ''
         return os.path.join(save_dir, model.split("/")[-1] + mean_flag + str(hash(t)))
@@ -40,7 +40,7 @@ def get_representations(texts, model, mean, recompute=False, save=True, save_dir
     if features is None:           
         features = get_features_from_input(
                     texts=texts, featurize_model_name=model, is_mean=mean,
-                    max_len=MAX_LEN, batch_size=4, name='p', device_id=0, verbose=False,
+                    max_len=max_len, batch_size=4, name='p', device_id=0, verbose=False,
                     features=None, tokenized_texts=None)
     if save:
         save_representations(list(range(len(texts))), features, file_name)
