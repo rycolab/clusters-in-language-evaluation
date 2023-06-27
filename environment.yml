@@ -15,6 +15,7 @@ dependencies:
   - jupyterlab
   - pylint
   - pip
+  - r-base
   - pip:
     - ipdb
     - rpy2
