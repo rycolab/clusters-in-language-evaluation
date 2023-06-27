@@ -98,6 +98,13 @@ $ make compare
 $ make plot
 ````
 
+### Run Probing Analysis
+```
+python src/notebooks/get_news_articles.py
+```
+All experiments can then be performed by running codeblocks in `src/notebooks/main.ipynb` linearly
+
+
 ## Extra Information
 
 #### Citation
