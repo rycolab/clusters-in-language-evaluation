@@ -104,11 +104,21 @@ $ make plot
 ````
 
 ### Run Probing Analysis
+The plots for this portion of the paper were made using R. In order to recreate them, you'll need to install R and the `rpy2` python library
+
+```
+# install R using your preferred OS package manager
+apt-get install r-base
+# install python--R interface
+pip install rpy2
+```
+
+#### Pull data for author categorization dataset 
 ```
 pip install rpy2
 python src/notebooks/get_news_articles.py
 ```
-All experiments can then be performed by running codeblocks in `src/notebooks/main.ipynb` linearly
+All probing experiments can then be performed by running codeblocks in `src/notebooks/main.ipynb` linearly
 
 
 ## Extra Information
