@@ -100,6 +100,7 @@ $ make plot
 
 ### Run Probing Analysis
 ```
+pip install rpy2
 python src/notebooks/get_news_articles.py
 ```
 All experiments can then be performed by running codeblocks in `src/notebooks/main.ipynb` linearly
