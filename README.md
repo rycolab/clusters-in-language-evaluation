@@ -22,7 +22,7 @@ $ git submodule update --init --recursive
 $ pip install -e ./mauve
 ```
 
-Finally build the library in the kenlm submodule
+Then build the library in the kenlm submodule
 ```bash
 $ cd kenlm
 $ mkdir -p build
@@ -33,6 +33,11 @@ $ make -j 4
 And install it to be usable in python:
 ```bash
 $ pip install https://github.com/kpu/kenlm/archive/master.zip
+```
+
+Finaly, install r-base, which is necessary for the probing analysis experiments:
+```bash
+$ conda install -c conda-forge r-base
 ```
 
 ## Run Experiments
