@@ -32,7 +32,8 @@ def read_representations(fpath):
     return data['ids'], data['representations']
 
 
-def train_clusters(p_representations, q_representations, num_buckets, kmeans_explained_var, seed, norm=None):
+def train_clusters(p_representations, q_representations, num_buckets,
+                   kmeans_explained_var, seed, norm=None):
     _, _, clustering_model = get_kmeans_clusters_from_feats(
         p_representations, q_representations, num_clusters=num_buckets,
         explained_variance=kmeans_explained_var, norm=norm, whiten=False,
