@@ -22,7 +22,7 @@ $ git submodule update --init --recursive
 $ pip install -e ./mauve
 ```
 
-Finally build the library in the kenlm submodule
+Then build the library in the kenlm submodule
 ```bash
 $ cd kenlm
 $ mkdir -p build
@@ -33,6 +33,11 @@ $ make -j 4
 And install it to be usable in python:
 ```bash
 $ pip install https://github.com/kpu/kenlm/archive/master.zip
+```
+
+Finaly, install r-base, which is necessary for the probing analysis experiments:
+```bash
+$ conda install -c conda-forge r-base
 ```
 
 ## Run Experiments
@@ -97,6 +102,24 @@ Now you can compare to human text by running:
 $ make compare
 $ make plot
 ````
+
+### Run Probing Analysis
+The plots for this portion of the paper were made using R. In order to recreate them, you'll need to install R and the `rpy2` python library
+
+```
+# install R using your preferred OS package manager
+apt-get install r-base
+# install python--R interface
+pip install rpy2
+```
+
+#### Pull data for author categorization dataset 
+```
+pip install rpy2
+python src/notebooks/get_news_articles.py
+```
+All probing experiments can then be performed by running codeblocks in `src/notebooks/main.ipynb` linearly
+
 
 ## Extra Information
 

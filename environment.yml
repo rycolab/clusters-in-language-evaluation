@@ -17,3 +17,6 @@ dependencies:
   - pip
   - pip:
     - ipdb
+    - datasets
+    - lxml
+    - goose3
